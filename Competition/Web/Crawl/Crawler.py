@@ -12,7 +12,7 @@ ansList = []
 
 for i in charList :
     for j in charList :
-        a = br.open("file:///D:/Files/CTF/Challenges/Web/Crawl/Pages/{}.html".format(i+j))
+        a = br.open("http://localhost:10111/Pages/{}.html".format(i+j))
         b = a.get_data()
         b = b.decode()
         if "Part" in b :
