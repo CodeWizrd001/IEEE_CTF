@@ -1,0 +1,21 @@
+body
+{
+    background-color: rgb(50,50,50) ;
+    color: blanchedalmond;
+}
+
+p
+{
+    color: antiquewhite;
+    font-size: large;
+    font-family: 'Courier New', Courier, monospace;
+}
+
+.center {
+    text-align: center;
+  }
+
+a 
+{
+    color: azure;
+}
