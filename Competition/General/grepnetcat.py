@@ -10,8 +10,10 @@ class EchoHandler(asyncore.dispatcher_with_send):
     def handle_read(self):
         self.i += 1
         self.send(random.choice(C).encode()) 
-        if self.i == 1500 :
+        if self.i == 2500 :
             self.send("ieee_nitc{Y0uR3_W3LcoMe}\n".encode())
+        if self.i == 5000 :
+            self.close()
 
 class EchoServer(asyncore.dispatcher):
     def __init__(self, host, port):
@@ -27,7 +29,10 @@ class EchoServer(asyncore.dispatcher):
         handler = EchoHandler(sock)
         handler.i = 0
 
-port = int(sys.argv[1])
+try :
+    port = int(sys.argv[1])
+except :
+    port = 10000
 server = EchoServer('0.0.0.0',port)
     
 try :
