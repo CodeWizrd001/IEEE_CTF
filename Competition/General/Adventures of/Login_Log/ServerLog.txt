@@ -1,0 +1,14 @@
+[Sun May  3 06:23:13 2020] Listening On 0.0.0.0:10000
+[Sun May  3 06:23:19 2020] Starting Thread for ('127.0.0.1', 65145)
+[Sun May  3 06:23:21 2020] Starting Thread for ('127.0.0.1', 65146)
+[Sun May  3 06:23:26 2020] Starting Thread for ('127.0.0.1', 65147)
+[Sun May  3 06:23:27 2020] Starting Thread for ('127.0.0.1', 65148)
+[Sun May  3 06:23:33 2020] Starting Thread for ('127.0.0.1', 65150)
+[Sun May  3 06:23:34 2020] Terminating Thread ('127.0.0.1', 65150)
+[Sun May  3 06:23:52 2020] Starting Thread for ('127.0.0.1', 65151)
+[Sun May  3 06:23:57 2020] Terminating Thread ('127.0.0.1', 65151)
+[Sun May  3 06:24:00 2020] Starting Thread for ('127.0.0.1', 65152)
+[Sun May  3 06:24:02 2020] Starting Thread for ('127.0.0.1', 65153)
+[Sun May  3 06:55:23 2020] Terminating Thread ('127.0.0.1', 65153)
+[Sun May  3 06:55:24 2020] KeyboardInterrupt
+[Sun May  3 06:55:24 2020] Quitting

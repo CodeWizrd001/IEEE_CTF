@@ -1,5 +1,6 @@
 def retFlagChunks() :
-	x = 'ieee_nitc{vishnu_UltG4M3r__pirate__Ph4t3_HuR4K3n_J0nQu1L_Azr13L_DR4G0n_Xx--xX}'
+	x = 'ieee_nitc{Z3u5_UltG4M3r__pirate__Ph4t3_HuR4K3n_J0nQu1L_Azr13L_DR4G0n_Xxx--xxX}'
+	print(len(x))
 	flagChunks = []
 	temp = ""
 	for i in range(len(x)) :
@@ -10,5 +11,20 @@ def retFlagChunks() :
 	return flagChunks
 
 g = retFlagChunks()
+print(g,len(g))
+h = [
+'ieee_n', 
+'itc{Z3', 
+'u5_Ult', 
+'G4M3r_', 
+'_pirat', 
+'e__Ph4', 
+'t3_HuR', 
+'4K3n_J', 
+'0nQu1L', 
+'_Azr13', 
+'L_DR4G', 
+'0n_Xxx',
+'--xxX}']
 for i in g :
-    print(i)
+    print(i,i in h)
