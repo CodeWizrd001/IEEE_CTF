@@ -13,7 +13,7 @@ class ShellServer(Server) :
             client = cl
             userp = "temp-user-"+addr[0].replace('.','-')+"@ieeectf:~$ "
             userp = userp.encode()
-            denied = "bash: {}: Command not found\n"
+            den = "bash: {}: Command not found\n"
             err = "bash: {}: Permission denied\n"
             dirr = "bash: {}: No such file or directory\n"
             client.send("""
@@ -46,7 +46,7 @@ New User Login from {} at {}
                 elif shellin[:2] == './' :
                     client.send(dirr.format(shellin.split()[0]).encode())
                 else :
-                    client.send(denied.format(shellin.split()[0]).encode())
+                    client.send(den.format(shellin.split()[0]).encode())
                     continue
             client.close()
         except :
