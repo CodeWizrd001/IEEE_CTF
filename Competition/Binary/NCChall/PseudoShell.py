@@ -5,7 +5,7 @@ import sys
 import subprocess
 import os
 
-edits = ['nano','vim','vi','leafpad','cd']
+denied = ['cat','nano','vim','vi','leafpad','cd']
 
 class ShellServer(Server) :
     def handle_io(self,cl,addr) :
@@ -39,7 +39,7 @@ New User Login from {} at {}
                     else :
                         client.send(a.stderr)
                     continue
-                elif shellin.split()[0] in edits :
+                elif shellin.split()[0] in denied :
                     client.send(err.format(shellin.split()[0]).encode())
                 elif shellin.split()[0] == "./flag.txt" :
                     client.send(err.format(shellin.split()[0]).encode())
@@ -50,7 +50,7 @@ New User Login from {} at {}
                     continue
             client.close()
         except :
-            print(Log("Connection with {} Terminated".format(cl)))
+            print(Log("Connection with {} Terminated".format(addr)))
         
 try :
     port = int(sys.argv[1])
