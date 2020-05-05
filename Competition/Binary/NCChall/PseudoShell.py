@@ -25,7 +25,7 @@ New User Login from {} at {}
             while True:
                 client.send(userp)
                 shellin = client.recv(2048).decode().strip('\n')
-                if shellin != "exit" or shellin != "exit " or shellin !="exit  " or shellin !="exit   " :
+                if shellin == "exit" or shellin == "exit " or shellin =="exit  " or shellin =="exit   " :
                     break
                 elif shellin == "" :
                     continue
