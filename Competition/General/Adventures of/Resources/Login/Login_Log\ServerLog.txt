@@ -1,0 +1,5 @@
+[Wed May  6 15:38:39 2020] Listening On 0.0.0.0:10000
+[Wed May  6 15:38:44 2020] Starting Thread for ('127.0.0.1', 50654)
+[Wed May  6 15:38:49 2020] Terminating Thread ('127.0.0.1', 50654)
+[Wed May  6 15:39:07 2020] KeyboardInterrupt
+[Wed May  6 15:39:07 2020] Quitting

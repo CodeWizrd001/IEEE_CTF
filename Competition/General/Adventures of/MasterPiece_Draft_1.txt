@@ -23,12 +23,31 @@ and completes various quests in his search for the kidnapped child . He is also
 accompanied by Azriel and meets Huraken a while into it . The three of them set 
 upon the journey interacting with the various other characters and completing quests.
 
+Flag 
+__________
+'Z3u5_Ult',     Done
+'G4M3r__p',     Done
+'irate__P',     Done
+'h4t3_HuR',     Done
+'4K3n_J0n',     Done
+'Qu1L_Azr',     Done
+'13L_DR4G',     Done    
+'0n_Xxxx-',     Done
+'----xxxX'      Done
 
 
 Question References - References are marked by [n]
 -------------------
-1 - Maze (Kind of Like the webcrawler) 
-2 - Loging (A netcat Login Kinda Problem)
+1 - G4M3r__p - Maze (Kind of Like the webcrawler)                       Done    zip_u.zip
+2 - Z3u5_Ult - Loging (A netcat Login Kinda Problem)                    Done 
+3 - ----xxxX - Logging - II (2nd flag from same file)                   Done
+4 - Qu1L_Azr - Packed (The Zip Challenge)                               Done    zip_p.zip
+5 - 0n_Xxxx- - An audio puzzle (Just a simple reverse would do)         Done    zip_t.zip
+6 - h4t3_HuR - An audio Puzzle (A bit complicated)                              Done    zip_v.zip
+7 - irate__P - An Image Puzzle                                          Done    zip_q.zip
+8 - 4K3n_J0n - Another Image Puzzle                                     Done    zip_r.zip
+9 - 13L_DR4G - A morse code one                                         Done    zip_s.zip
+
 
 
 Story   (Parts I'm sure should occur)
@@ -48,7 +67,7 @@ on his shoulder.He looked up and saw a young man with a brawny build yet bruises
 all over.But the bruises did'nt seem to bother the guy ."Name's Azriel.Who are you ?"
 he asked .And Gamer answered with his alias "UltGamer but call me Gamer" .
 "Okay Gamer what brings you to these parts ?"."Where am I ?What is this place?"
-asked the befuddled Techie ."This is __________. And YOU should'nt be here." 
+asked the befuddled Techie ."This is nowhere. And YOU should'nt be here." 
 .
 .
 .

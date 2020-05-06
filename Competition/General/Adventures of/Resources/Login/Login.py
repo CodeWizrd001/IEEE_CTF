@@ -20,6 +20,28 @@ rBuff = 8192
 
 onlineList = {}
 
+story = """
+He enters the password and the surface beneath him starts to crumble .
+He keeps falling and falling and everything goes dark .
+
+As he regained his consiousness all he could here was a repeating chant.
+"HURAKEN WILL LEAD YOU THROUGH THE MAZE[1] , HURAKEN WILL LEAD YOU THROUGH THE MAZE
+HURAKEN WILL LEAD YOU THROUGH THE MAZE" .His vision cleared and he saw a large 
+creature fly .It was a Dragon disappearing into the distance still roaring 
+"HURAKEN WILL LEAD YOU THROUGH THE MAZE".Who is Huraken ? and what Maze ?
+So many questions and yet one question shadowed all the others . How did he just 
+see a dragon ? He must definitely be dreaming .Mind still wandering he felt a tap
+on his shoulder.He looked up and saw a young man with a brawny build yet bruises 
+all over.But the bruises did'nt seem to bother the guy ."Name's Azriel.Who are you ?"
+he asked .And Gamer answered with his alias "UltGamer but call me Gamer" .
+"Okay Gamer what brings you to these parts ?"."Where am I ?What is this place?"
+asked the befuddled Techie ."This is nowhere. And YOU should'nt be here." 
+
+Password to the zipfile zip_q.zip is    hippie
+Password to the zipfile zip_p.zip is    hello
+
+""".encode()
+
 if not os.path.exists("Login_Log") :                            # Logging Setup
     os.mkdir("Login_Log")
 ELog = open("Login_Log\\ErrorsLog.txt",mode="w")
@@ -86,7 +108,9 @@ User : xxxx         Pwd : xxxx
             raise AuthException
         client.send('[+] Authorised Personel \n'.encode())
         client.send('[+] Flag Part 1 out of 9        Z3u5_Ult      \n\n\n'.encode())
-        client.close()
+        client.send("[+] The password to zip file zip_q.zip is      hippie     \n\n".encode())
+        if not user.super :
+            client.send(story)
         if user.super :
             for i in range(5) :
                 client.send('.\n'.encode())
