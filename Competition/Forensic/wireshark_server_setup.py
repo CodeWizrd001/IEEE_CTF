@@ -19,9 +19,9 @@ def getId() :
     id = list(map(random.choice,[_,_,_,p,a,r,t,_,o,f,_,f,l,a,g,_,o,u,t,_,o,f,_,_1,_1,_]))
     return ''.join(id)
 
-flag = ['iee', 'e_n', 'itc', '{SH', '4RK', 'b0Y', '_4n', 'd_l', 'aVA', '61r', 'L}']
+flag = ['ieee_nitc{Fl4g_iNs1D3_d4TAPacK3t5}'.encode()]
 
-allowed = ['drip','dust','loud','flight','damaging','homely']
+allowed = ['drip']
 
 def flagF(chunk) :
     f = "\n\n\n"+getId()+"\n"+chunk+"\n\n\n\n\n\n   "
@@ -43,28 +43,35 @@ class FlagServer(Server) :
                 client.send(a)
                 if a.decode().split('\n')[0] in allowed and flag != [] :
                     # print(Log("Flag Send {} to {}".format(self.addr,addr)))
-                    fl = flagF(flag.pop(random.randint(0,len(flag)-1)))
-                    print(fl.decode())
+                    try :
+                        fl = flag.pop()
+                    except Exception as E:
+                        print(Log(E))
+                        fl = "Flag already sent\n".encode()
                     client.send(fl)
+                    print(fl)
                     print(Log("Flag Sent {} to {}".format(self.addr,addr)))
                 if 'exit' in a.decode() :
                     client.close()
                     break
             except OSError :
-                print(Log("OSError {}".format(addr)))
+                pass
+                # print(Log("OSError {}".format(addr)))
                 client.close()
                 break
             except BaseException as e :
-                print(Log("{} cause by {}".format(e,addr)))
+                pass
+                # print(Log("{} cause by {}".format(e,addr)))
                 break
             finally :
-                print(Log("Connection with {} terminated".format(addr)))
+                pass
+                # print(Log("Connection with {} terminated".format(addr)))
 
 def FlagFun(port) :
     a = FlagServer(addr=('0.0.0.0',port))
     a.start()
 
 if __name__ == "__main__" :
-    for i in range(8000,8100) :
+    for i in range(8000,8030) :
         th = Thread(target=FlagFun,args=(i,))
         th.start()

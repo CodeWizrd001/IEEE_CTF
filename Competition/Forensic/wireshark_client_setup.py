@@ -889,8 +889,8 @@ sendList = ['hey','hello','world','rabid','aloof','amused','carve','optimal','me
 'rhyme', 'belong','panoramic','thaw','fire','workable','desire','delirious',
 'drip','dust','loud','flight','damaging','homely']
 
-allowed = ['drip','dust','loud','flight','damaging','homely']
-k = 11
+allowed = ['drip']
+k = 1
 class Cust(Client) :
     def __init__(self,ip="0.0.0.0",port=8000) :
         Client.__init__(self,ip=ip,port=port) 
@@ -911,13 +911,13 @@ def connect(port) :
     print(k)
 
 if __name__ == "__main__":
-    for j in range(7) :
-        for i in range(8001,8100) :
+    for j in range(5) :
+        for i in range(8000,8030) :
             thread = Thread(target=connect,args=(i,))
             thread.start()
     print(k)
     time.sleep(1)
     while k > 0 :
-        for i in range(8001,8100) :
+        for i in range(8000,8030) :
             thread = Thread(target=connect,args=(i,))
             thread.start()

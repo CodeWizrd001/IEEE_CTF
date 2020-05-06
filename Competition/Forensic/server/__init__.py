@@ -17,7 +17,7 @@ class Server :
         print(Log("Listening At {}:{}".format(self.addr[0],self.addr[1])))
         while True :
             cl , addr = self.sock.accept()
-            print(Log("Accepted connection from {}:{}".format(addr[0],addr[1])))
+            # print(Log("Accepted connection from {}:{}".format(addr[0],addr[1])))
             self.handle_accepted(cl,addr)
     def handle_accepted(self,cl,addr) :
         """
