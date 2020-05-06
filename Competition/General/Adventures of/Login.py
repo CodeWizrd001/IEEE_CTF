@@ -91,7 +91,7 @@ User : xxxx         Pwd : xxxx
             for i in range(5) :
                 client.send('.\n'.encode())
                 time.sleep(0.1)
-            client.send('[+] Super User Level Detected')
+            client.send('[+] Super User Level Detected'.encode())
             client.send('[+] Flag Part 9 out of 9        ----xxxX      \n\n\n'.encode())
         client.close()
     except ConnectionAbortedError :
